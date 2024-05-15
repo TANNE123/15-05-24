@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(201, 234, 137);
+        }
+        #parent_div{
+            display: grid;
+            width: 600px;
+            height: 120px;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: repeat(3,1fr);
+            border: 2px solid;
+        }
+        #parent_div div{
+            border: 2px solid;
+            display: grid;
+            align-content: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 20px;
+            
+        }
+        #veg{
+            grid-column: 1/3;
+        }
+        #cost{
+            grid-row: 2/4;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent_div">
+        <div id="veg">veggies</div>
+        <div>Tomato</div>
+        <div>Potato</div>
+        <div>Oniones</div>
+        <div id="cost">cost</div>
+        <div>MRP</div>
+        <div>20</div>
+        <div>50</div>
+        <div>50</div>
+        <div>RP</div>
+        <div>80</div>
+        <div>60</div>
+        <div>60</div>
+    </div>
+</body>
+</html>
